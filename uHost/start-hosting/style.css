@@ -1,0 +1,124 @@
+main {
+    background: linear-gradient(rgba(95, 50, 122, 0.707) 75%, rgba(38, 41, 57, 0.892)), url(/images/packages.jpg);
+    height: 100vh;
+    background-size: cover;
+    padding: 5rem 2rem;
+}
+
+.signup-title {
+    padding: 1rem 2.5rem 1rem 2.5rem;
+    font-size: 1.8rem;
+    font-family: 'Poppins', sans-serif;
+    color: whitesmoke;
+    text-align: center;
+}
+
+.signup-form label {
+    font-family:'Poppins', sans-serif;
+    color: whitesmoke;
+}
+
+.signup-form label,
+.signup-form input,
+.signup-form select {
+    display: block;
+    margin-top: 1rem;
+    width: 100%;
+    font-family:'Poppins', sans-serif;
+}
+
+.signup-form input:not([type='checkbox']),
+.signup-form select {
+    background-color: #f8ceec;
+    background-image: linear-gradient(315deg, #f8ceec 0%, #a88beb 74%);
+    border-radius: 10px;
+    padding: 3px;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.658) 0px 30px 90px;
+}
+
+.signup-form input:active,
+.signup-form select:active,
+.signup-form input:focus,
+.signup-form select:focus {
+    outline: solid rgb(120, 35, 160);
+    background-color: #f8ceec;
+    background-image: linear-gradient(315deg, #a88beb 0%, #f8ceec 74%);
+}
+
+.signup-form input[id*='terms'],
+.signup-form input[id*='terms'] + label {
+    display: inline-block;
+    width: auto;
+}
+
+.signup-form input[type='checkbox'] {
+    border: 1px solid rgb(120, 35, 160);
+    border-radius: 5px;
+    background-color: #f8ceec;
+    background-image: linear-gradient(315deg, #f8ceec 0%, #a88beb 74%);
+    width: 1rem;
+    height: 1rem;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    cursor: pointer;
+}
+
+.signup-form input[type='checkbox']:checked {
+    background: rgba(223, 40, 165, 0.842);
+}
+
+.signup-form #title:valid {
+    box-shadow: 0px 0px 20px 2px rgba(127, 40, 226, 0.842);
+}
+
+.signup-form #first-name:valid {
+    box-shadow: 0px 0px 20px 2px rgba(164, 40, 226, 0.842);
+}
+
+.signup-form #last-name:valid {
+    box-shadow: 0px 0px 20px 2px rgba(204, 40, 226, 0.842);
+}
+
+.signup-form #email:valid {
+    box-shadow: 0px 0px 20px 2px rgba(223, 40, 225, 0.842);
+}
+
+.signup-form #password:valid {
+    box-shadow: 0px 0px 20px 2px rgba(223, 40, 165, 0.842);
+}
+
+.signup-form #agreed-terms:valid {
+    box-shadow: 0px 0px 10px 5px rgba(223, 40, 165, 0.842);
+}
+
+.signup-form button {
+    display: block;
+    margin-top: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.2rem;
+    padding: 0.7rem;
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+    text-shadow: 1px 1px rgba(67, 67, 67, 0.718);
+    background: linear-gradient(rgba(223, 40, 165, 0.842) 20%, rgba(76, 16, 128, 0.842));
+    color: whitesmoke;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.signup-form button:active,
+.signup-form button:hover {
+    background: linear-gradient(rgba(223, 40, 165, 0.842), rgba(76, 16, 128, 0.842));
+}
+
+@media(min-width : 40rem) {
+    .signup-form {
+        max-width: 40%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

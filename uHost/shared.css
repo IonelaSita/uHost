@@ -1,0 +1,250 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+}
+
+header {
+    background-color: rgba(15, 29, 34, 0.892);
+    width: 100%;
+    position: fixed;
+    z-index: 2;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.main-header-brand {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.main-header-brand img {
+    margin: 1rem;
+}
+
+.main-header-brand p {
+    color: whitesmoke;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+.toggle-button {
+    width: 3rem;
+    margin: 1rem 0rem 1rem 1rem;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.toggle-button:focus, 
+.toggle-button:hover,
+.toggle-button:active {
+    outline: none;
+}
+
+.toggle-button-bar {
+    width: 100%;
+    height: 0.2rem;
+    background: whitesmoke;
+    display: block;
+    margin: 0.6rem 0;
+    border-radius: 5px;
+}
+
+.main-nav {
+    margin-right: 1rem;
+}
+
+.main-nav-items {
+    list-style: none;
+    display: none;
+}
+
+.main-nav-item {
+    display: inline-block;
+    margin: 0.5rem;
+}
+
+.main-nav-item a {
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 1.15rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+}
+
+.main-nav-item a:hover, 
+.main-nav-item a:active, 
+.main-nav-item a:hover {
+    color: rgb(172, 104, 204);
+}
+
+#start-hosting {
+    padding: 7px;
+    border-radius: 4px;
+    background-color: rgb(120, 35, 160);
+}
+
+.backdrop {
+    display: none;
+    position: fixed;
+    background-color: #000000b9;
+    width: 100vw;
+    height: 100vh;
+    z-index: 2;
+}
+
+.mobile-nav {
+    transform: translateX(-100%);
+    transition: transform 0.5s;
+    justify-content: center;
+    text-align: center;
+    z-index: 4;
+    position: fixed;
+    background: linear-gradient(rgb(186, 39, 139) 30%, rgba(42, 9, 71, 0.971));
+    width: 70%;
+    height: 100vh;
+}
+
+.mobile-nav-items {
+    list-style: none;
+    margin-top: 3rem;
+    padding-inline-start: unset;
+}
+
+.mobile-nav-item {
+    padding: 1rem;
+}
+
+.mobile-nav-item a {
+    text-decoration: none;
+    color: whitesmoke;
+    text-shadow: 2px 2px rgba(22, 22, 22, 0.559);
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+}
+
+.mobile-nav-item a:hover, 
+.mobile-nav-item a:focus, 
+.mobile-nav-item a:active {
+    color: rgb(120, 35, 160);
+    text-shadow: 3px 3px 20px rgb(255, 255, 255);
+    font-weight: bolder;
+}
+
+.mobile-nav-item-cta {
+    padding: 5px;
+    width: 11rem;
+    border-radius: 4px;
+    background-color: rgb(120, 35, 160);
+    margin: auto;
+}
+
+.main-nav-item:last-child {
+    animation: zoom-in-out 1s 2s ease infinite;
+}
+
+.mobile-nav-item-cta:hover, 
+.mobile-nav-item-cta:active, 
+.mobile-nav-item-cta:focus {
+    background-color: rgb(255, 255, 255);
+    color: rgb(120, 35, 160);
+}
+
+.mobile-nav-circle-1 {
+    transform: translateX(-1000%);
+    transition: transform 0.7s;
+    width: 16rem;
+    height: 16rem;
+    background: linear-gradient(to bottom left, rgba(28, 24, 26, 0.944), 40%, rgba(127, 21, 180, 0.868)), url(images/galaxy.jpg);
+    position: fixed;
+    z-index: 5;
+    border-radius: 50%;
+    box-shadow: rgb(0, 0, 0) 0px 30px 90px;
+    top: 85%;
+    left: 12%;
+}
+
+.mobile-nav-circle-2 {
+    transform: translateX(-1000%);
+    transition: transform 0.7s;
+    width: 10rem;
+    height: 10rem;
+    background: linear-gradient(to bottom left, rgba(31, 28, 29, 0.942), 40%, rgba(113, 21, 175, 0.629)), url(images/galaxy.jpg);
+    position: fixed;
+    z-index: 6;
+    border-radius: 50%;
+    box-shadow: rgb(0, 0, 0) 0px 30px 90px;
+    top: 74%;
+    left: 45%;
+    z-index: 5;
+}
+
+.mobile-nav-circle-3 {
+    transform: translateX(-1000%);
+    transition: transform 0.7s;
+    width: 6rem;
+    height: 6rem;
+    background: linear-gradient(to bottom left, rgba(28, 24, 26, 0.944), 40%, rgba(144, 21, 175, 0.61)), url(images/galaxy.jpg);
+    position: fixed;
+    z-index: 5;
+    border-radius: 50%;
+    box-shadow: rgb(0, 0, 0) 0px 30px 90px;
+    top: 60%;
+    left: 42%;
+}
+
+.main-footer {
+    background-color: rgba(9, 13, 32, 0.892);
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+.main-footer-links {
+    list-style: none;
+    padding-inline-start: unset;
+    padding: 1rem 0rem 1rem 0rem;
+}
+
+.main-footer-link a {
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 1.15rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+.customers {
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+@media (min-width: 40rem) {
+    .toggle-button {
+        display: none;
+    }
+
+    .main-nav-items {
+        display: flex;
+    }
+
+    .main-footer-link{
+        margin: 1rem 1rem 1.4rem 1rem;
+    }
+
+    .main-footer-links {
+        display: flex;
+        justify-content: center;
+    }
+}
